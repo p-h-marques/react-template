@@ -1,18 +1,18 @@
 import React from 'react'
 import {Redirect, Route, Switch} from 'react-router-dom'
 
-import Start from './components/start'
+import Main from './pages/main'
 import './reset.css'
 
 function RoutesList() {
     return (
         <Switch>
-            <Route exact path="/start">
-                <Start></Start>
+            <Route exact path="/">
+                <Main></Main>
             </Route>
 
             <Route exact path="*">
-                <Redirect to="/start" />
+                <Redirect to="/" />
             </Route>
         </Switch>
     )
